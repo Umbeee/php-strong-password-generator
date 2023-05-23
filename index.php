@@ -1,27 +1,3 @@
-<?php
-$lunghezza = 0;
-$lunghezza = $_GET['variabileLunghezza'];
-
-//var_dump ($lunghezza);
-
-function passwordGen($lunghezza) {
-    $numLettere = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $randomString = '';
- 
-    for ($i = 0; $i < $lunghezza; $i++) {
-        $indice = rand(0, strlen($numLettere) - 1);
-        $randomString .= $numLettere[$indice];
-    }
- 
-    return $randomString;
-}
- 
-echo passwordGen($lunghezza);
-?>
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +10,7 @@ echo passwordGen($lunghezza);
 <body>
     
     <h1 class="text-center my-5 text-capitalize">strong password generator</h1>
-    <form action="index.php" class="text-center d-flex align-item-center justify-content-center gap-3">
+    <form action="functions.php" class="text-center d-flex align-item-center justify-content-center gap-3">
         <input type="number" placeholder="lunghezza password" name="variabileLunghezza">
         <button class="btn btn-primary">invia</button>
     </form>
