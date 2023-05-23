@@ -11,7 +11,7 @@
     
     <h1 class="text-center my-5 text-capitalize">strong password generator</h1>
     <form action="functions.php" class="text-center d-flex align-item-center justify-content-center gap-3">
-        <input type="number" placeholder="lunghezza password" name="variabileLunghezza">
+        <input type="number" placeholder="lunghezza password (minimo 6)" name="variabileLunghezza" min="6">
         <button class="btn btn-primary">invia</button>
     </form>
 
